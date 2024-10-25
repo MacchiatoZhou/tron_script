@@ -68,7 +68,7 @@ public class  MyConfig {
 
     public static final int MAX_MESSAGE_LENGTH = 5 * 1024 * 1024;
     @Getter
-    public static final String codeVersion = "4.7.5";
+    public static final String codeVersion = "4.7.6";
     public static final String VERSION_NAME = "GreatVoyage-v4.7.4-44-g8720e06a6";
     public static final String VERSION_CODE = "18306";
     public static MyHP2pEventHandlerImpl hp2pEventHandler;
@@ -296,7 +296,7 @@ public class  MyConfig {
         System.out.println("num"+num);
 
         return new MyBlockId(hashBytes,num);
-        //return new BlockId(dynamicPropertiesStore.getLatestBlockHeaderHash());
+        
     }
      public static org.tron.protos.Discover.Endpoint getHomeFrom(){
         org.tron.protos.Discover.Endpoint.Builder builder = org.tron.protos.Discover.Endpoint.newBuilder()
