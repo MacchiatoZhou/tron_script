@@ -277,17 +277,7 @@ public class MyChannelManager {
         if (list.size() <= 1) {
             return;
         }
-//        Channel c1 = list.get(0);
-//        Channel c2 = list.get(1);
-//        if (c1.getStartTime() > c2.getStartTime()) {
-//            log.info("Close channel {}, other channel {} is earlier", c1, c2);
-//            c1.send(new P2pDisconnectMessage(Connect.DisconnectReason.DUPLICATE_PEER));
-//            c1.close();
-//        } else {
-//            log.info("Close channel {}, other channel {} is earlier", c2, c1);
-//            c2.send(new P2pDisconnectMessage(Connect.DisconnectReason.DUPLICATE_PEER));
-//            c2.close();
-//        }
+
     }
 
     //    public static void triggerConnect(InetSocketAddress address) {
@@ -297,22 +287,5 @@ public class MyChannelManager {
         log.info("Try to close channel: {}, reason: {}", channel.getInetSocketAddress(), reason.name());
 }
 
-//    public static void triggerConnect(InetSocketAddress preferInetSocketAddress) {
-//        // 开始重新连接，创建新的 Channel 并尝试连接
-//        try {
-//            ChannelFuture future = bootstrap.connect(address);
-//            future.addListener((ChannelFutureListener) connectFuture -> {
-//                if (connectFuture.isSuccess()) {
-//                    log.info("Reconnected to: {}", address);
-//                } else {
-//                    log.warn("Reconnect to {} failed, retrying...", address);
-//                    // 重新连接失败后，可以加入延迟，再次重试
-//                    // 比如每隔几秒钟重试一次
-//                    scheduleReconnect(address);
-//                }
-//            });
-//        } catch (Exception e) {
-//            log.error("Exception occurred during reconnect: {}", e.getMessage());
-//        }
-//    }
+
 }
