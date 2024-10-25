@@ -63,6 +63,7 @@ $ java -jar ./TronDiscover.jar
 
 目前可选的命令行参数
 - --localId 指定本地模拟节点的nodeId
-- --remoteIp 指定需要连接的节点的nodeId
+- --remoteIp 指定需要连接的节点的ipv4地址
 - --network 指定网络号
+- --localIp 指定需要绑定的本地网卡
 - 后续将支持更多命令行参数...
