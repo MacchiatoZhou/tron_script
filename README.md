@@ -29,7 +29,7 @@ $ java -jar ./TronConnector.jar
 ```
 目前可选的命令行参数
 - --localId 指定本地模拟节点的nodeId
-- --remoteIp 指定需要连接的节点的nodeId
+- --remoteIp 指定需要连接的节点的ipv4地址
 - 后续将支持更多命令行参数...
 ## Module 2-MyDiscover
 该模块实现了波场的节点发现协议中各种消息类型的构造、打包、解析，进而支持了波场节点中发现协议模块的模拟。
